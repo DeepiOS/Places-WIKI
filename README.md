@@ -21,7 +21,7 @@ Places App:
 * There are builder pattern used to process and create ViewModel.
 * The whole app is built using SwiftUI + Combine using protocol oriented programming.
 * Plist is being used to save user data.
-* XCTest framework is used to extensively cover all the parts of the codebase with unit-tests.
+* XCTest framework is used to extensively cover most parts of the codebase with unit-tests.(86% Coverage👍)
 
 Wikipedia App:
 * There no architectural change in this app.

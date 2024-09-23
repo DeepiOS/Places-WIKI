@@ -45,12 +45,12 @@ final class LocalDataStorage: LocalDataStoring {
     
     func remove(data: String) {
         var storedData = getAllData()
-        storedData.append(data)
+        storedData.removeAll(where: { $0 == data })
         saveToStorage(storedData)
     }
     
     func reset() {
-        saveToStorage([])
+        removeFile()
     }
 }
 
@@ -73,6 +73,17 @@ private extension LocalDataStorage {
             debugPrint("Data saved successfully to \(fileURL)")
         } catch {
             debugPrint("Error saving data to plist: \(error)")
+        }
+    }
+    
+    // Remove file
+    func removeFile() {
+        guard let fileURL = getPlistPath(storageName) else { return }
+        do {
+            try FileManager.default.removeItem(at: fileURL)
+            print("Successfully deleted file!")
+        } catch {
+            print("Error deleting file: \(error)")
         }
     }
 }

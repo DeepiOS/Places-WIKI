@@ -40,6 +40,7 @@
 		539532952CA08A560072C2A2 /* AddLocationViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539532942CA08A560072C2A2 /* AddLocationViewModelTests.swift */; };
 		539532982CA094380072C2A2 /* DeepLinkBuildingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539532972CA094380072C2A2 /* DeepLinkBuildingTests.swift */; };
 		5395329B2CA0977F0072C2A2 /* NetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5395329A2CA0977F0072C2A2 /* NetworkServiceTests.swift */; };
+		53C6C8512CA1C6750099C7CA /* LocalDataStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C6C8502CA1C6740099C7CA /* LocalDataStorageTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,7 @@
 		539532942CA08A560072C2A2 /* AddLocationViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationViewModelTests.swift; sourceTree = "<group>"; };
 		539532972CA094380072C2A2 /* DeepLinkBuildingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinkBuildingTests.swift; sourceTree = "<group>"; };
 		5395329A2CA0977F0072C2A2 /* NetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTests.swift; sourceTree = "<group>"; };
+		53C6C8502CA1C6740099C7CA /* LocalDataStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataStorageTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -331,6 +333,7 @@
 			isa = PBXGroup;
 			children = (
 				539532972CA094380072C2A2 /* DeepLinkBuildingTests.swift */,
+				53C6C8502CA1C6740099C7CA /* LocalDataStorageTests.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -504,6 +507,7 @@
 				5395328B2C9FBAF20072C2A2 /* LocationListViewModelTests.swift in Sources */,
 				539532862C9FB9F20072C2A2 /* MockLocalDataStore.swift in Sources */,
 				539532902C9FCE130072C2A2 /* MockLocationConverter.swift in Sources */,
+				53C6C8512CA1C6750099C7CA /* LocalDataStorageTests.swift in Sources */,
 				539532802C9FB8190072C2A2 /* MockNetworkService.swift in Sources */,
 				539532822C9FB98E0072C2A2 /* MockDeepLinkBuilder.swift in Sources */,
 				539532922C9FCEA00072C2A2 /* LocationListViewRenderableBuilderTests.swift in Sources */,
