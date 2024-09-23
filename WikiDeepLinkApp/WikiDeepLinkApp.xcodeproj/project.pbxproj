@@ -1,0 +1,874 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		532C3CC22CA09D7D003688ED /* WikiDeepLinkAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532C3CBF2CA09D7D003688ED /* WikiDeepLinkAppUITests.swift */; };
+		532C3CC32CA09D7D003688ED /* WikiDeepLinkAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532C3CC02CA09D7D003688ED /* WikiDeepLinkAppUITestsLaunchTests.swift */; };
+		532C3CC42CA09D7D003688ED /* WikiDeepLinkAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532C3CC12CA09D7D003688ED /* WikiDeepLinkAppTests.swift */; };
+		532C3CC62CA0AA8C003688ED /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532C3CC52CA0AA8C003688ED /* MockURLSession.swift */; };
+		539532282C9D71EF0072C2A2 /* WikiDeepLinkAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539532272C9D71EF0072C2A2 /* WikiDeepLinkAppApp.swift */; };
+		5395322C2C9D71F10072C2A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5395322B2C9D71F10072C2A2 /* Assets.xcassets */; };
+		539532302C9D71F10072C2A2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5395322F2C9D71F10072C2A2 /* Preview Assets.xcassets */; };
+		539532542C9D72C40072C2A2 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539532532C9D72C40072C2A2 /* NetworkRequest.swift */; };
+		539532562C9D73430072C2A2 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539532552C9D73430072C2A2 /* NetworkService.swift */; };
+		539532582C9DA23A0072C2A2 /* FetchLocationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539532572C9DA23A0072C2A2 /* FetchLocationRequest.swift */; };
+		5395325B2C9DA3320072C2A2 /* FetchLocationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5395325A2C9DA3320072C2A2 /* FetchLocationResponse.swift */; };
+		539532602C9DB4C80072C2A2 /* LocationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5395325F2C9DB4C80072C2A2 /* LocationListView.swift */; };
+		539532622C9DB4E00072C2A2 /* LocationListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539532612C9DB4E00072C2A2 /* LocationListViewModel.swift */; };
+		539532652C9DBA2C0072C2A2 /* DeepLinkBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539532642C9DBA2C0072C2A2 /* DeepLinkBuilder.swift */; };
+		539532672C9DBF150072C2A2 /* LocationListViewRenderableBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539532662C9DBF150072C2A2 /* LocationListViewRenderableBuilder.swift */; };
+		5395326A2C9DD17F0072C2A2 /* CLLocation+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539532692C9DD17F0072C2A2 /* CLLocation+Extension.swift */; };
+		539532712C9EC0F20072C2A2 /* LocalDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539532702C9EC0F20072C2A2 /* LocalDataStorage.swift */; };
+		539532752C9ED83A0072C2A2 /* URLOpener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539532742C9ED83A0072C2A2 /* URLOpener.swift */; };
+		539532782C9EF1260072C2A2 /* AddLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539532772C9EF1260072C2A2 /* AddLocationView.swift */; };
+		5395327A2C9EF14C0072C2A2 /* AddLocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539532792C9EF14C0072C2A2 /* AddLocationViewModel.swift */; };
+		5395327D2C9EFD7F0072C2A2 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5395327C2C9EFD7F0072C2A2 /* AppConstants.swift */; };
+		539532802C9FB8190072C2A2 /* MockNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5395327F2C9FB8190072C2A2 /* MockNetworkService.swift */; };
+		539532822C9FB98E0072C2A2 /* MockDeepLinkBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539532812C9FB98E0072C2A2 /* MockDeepLinkBuilder.swift */; };
+		539532842C9FB9C40072C2A2 /* MockLocationListViewRenderableBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539532832C9FB9C40072C2A2 /* MockLocationListViewRenderableBuilder.swift */; };
+		539532862C9FB9F20072C2A2 /* MockLocalDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539532852C9FB9F20072C2A2 /* MockLocalDataStore.swift */; };
+		539532882C9FBA390072C2A2 /* MockURLOpener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539532872C9FBA390072C2A2 /* MockURLOpener.swift */; };
+		5395328B2C9FBAF20072C2A2 /* LocationListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5395328A2C9FBAF20072C2A2 /* LocationListViewModelTests.swift */; };
+		5395328E2C9FCD590072C2A2 /* LocationConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5395328D2C9FCD590072C2A2 /* LocationConverter.swift */; };
+		539532902C9FCE130072C2A2 /* MockLocationConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5395328F2C9FCE130072C2A2 /* MockLocationConverter.swift */; };
+		539532922C9FCEA00072C2A2 /* LocationListViewRenderableBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539532912C9FCEA00072C2A2 /* LocationListViewRenderableBuilderTests.swift */; };
+		539532952CA08A560072C2A2 /* AddLocationViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539532942CA08A560072C2A2 /* AddLocationViewModelTests.swift */; };
+		539532982CA094380072C2A2 /* DeepLinkBuildingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539532972CA094380072C2A2 /* DeepLinkBuildingTests.swift */; };
+		5395329B2CA0977F0072C2A2 /* NetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5395329A2CA0977F0072C2A2 /* NetworkServiceTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		539532362C9D71F10072C2A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5395321C2C9D71EF0072C2A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 539532232C9D71EF0072C2A2;
+			remoteInfo = WikiDeepLinkApp;
+		};
+		539532402C9D71F10072C2A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5395321C2C9D71EF0072C2A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 539532232C9D71EF0072C2A2;
+			remoteInfo = WikiDeepLinkApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		532C3CBF2CA09D7D003688ED /* WikiDeepLinkAppUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WikiDeepLinkAppUITests.swift; sourceTree = "<group>"; };
+		532C3CC02CA09D7D003688ED /* WikiDeepLinkAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WikiDeepLinkAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		532C3CC12CA09D7D003688ED /* WikiDeepLinkAppTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WikiDeepLinkAppTests.swift; sourceTree = "<group>"; };
+		532C3CC52CA0AA8C003688ED /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
+		539532242C9D71EF0072C2A2 /* WikiDeepLinkApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WikiDeepLinkApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		539532272C9D71EF0072C2A2 /* WikiDeepLinkAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiDeepLinkAppApp.swift; sourceTree = "<group>"; };
+		5395322B2C9D71F10072C2A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5395322D2C9D71F10072C2A2 /* WikiDeepLinkApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WikiDeepLinkApp.entitlements; sourceTree = "<group>"; };
+		5395322F2C9D71F10072C2A2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		539532352C9D71F10072C2A2 /* WikiDeepLinkAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WikiDeepLinkAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5395323F2C9D71F10072C2A2 /* WikiDeepLinkAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WikiDeepLinkAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		539532532C9D72C40072C2A2 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		539532552C9D73430072C2A2 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		539532572C9DA23A0072C2A2 /* FetchLocationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchLocationRequest.swift; sourceTree = "<group>"; };
+		5395325A2C9DA3320072C2A2 /* FetchLocationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchLocationResponse.swift; sourceTree = "<group>"; };
+		5395325F2C9DB4C80072C2A2 /* LocationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListView.swift; sourceTree = "<group>"; };
+		539532612C9DB4E00072C2A2 /* LocationListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListViewModel.swift; sourceTree = "<group>"; };
+		539532642C9DBA2C0072C2A2 /* DeepLinkBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinkBuilder.swift; sourceTree = "<group>"; };
+		539532662C9DBF150072C2A2 /* LocationListViewRenderableBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListViewRenderableBuilder.swift; sourceTree = "<group>"; };
+		539532692C9DD17F0072C2A2 /* CLLocation+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocation+Extension.swift"; sourceTree = "<group>"; };
+		539532702C9EC0F20072C2A2 /* LocalDataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataStorage.swift; sourceTree = "<group>"; };
+		539532742C9ED83A0072C2A2 /* URLOpener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLOpener.swift; sourceTree = "<group>"; };
+		539532772C9EF1260072C2A2 /* AddLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationView.swift; sourceTree = "<group>"; };
+		539532792C9EF14C0072C2A2 /* AddLocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationViewModel.swift; sourceTree = "<group>"; };
+		5395327C2C9EFD7F0072C2A2 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		5395327F2C9FB8190072C2A2 /* MockNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkService.swift; sourceTree = "<group>"; };
+		539532812C9FB98E0072C2A2 /* MockDeepLinkBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDeepLinkBuilder.swift; sourceTree = "<group>"; };
+		539532832C9FB9C40072C2A2 /* MockLocationListViewRenderableBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLocationListViewRenderableBuilder.swift; sourceTree = "<group>"; };
+		539532852C9FB9F20072C2A2 /* MockLocalDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLocalDataStore.swift; sourceTree = "<group>"; };
+		539532872C9FBA390072C2A2 /* MockURLOpener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLOpener.swift; sourceTree = "<group>"; };
+		5395328A2C9FBAF20072C2A2 /* LocationListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListViewModelTests.swift; sourceTree = "<group>"; };
+		5395328D2C9FCD590072C2A2 /* LocationConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationConverter.swift; sourceTree = "<group>"; };
+		5395328F2C9FCE130072C2A2 /* MockLocationConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLocationConverter.swift; sourceTree = "<group>"; };
+		539532912C9FCEA00072C2A2 /* LocationListViewRenderableBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListViewRenderableBuilderTests.swift; sourceTree = "<group>"; };
+		539532942CA08A560072C2A2 /* AddLocationViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationViewModelTests.swift; sourceTree = "<group>"; };
+		539532972CA094380072C2A2 /* DeepLinkBuildingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinkBuildingTests.swift; sourceTree = "<group>"; };
+		5395329A2CA0977F0072C2A2 /* NetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		539532212C9D71EF0072C2A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		539532322C9D71F10072C2A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5395323C2C9D71F10072C2A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		532C3CBE2CA09CD3003688ED /* WikiDeepLinkAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				532C3CC12CA09D7D003688ED /* WikiDeepLinkAppTests.swift */,
+				532C3CBF2CA09D7D003688ED /* WikiDeepLinkAppUITests.swift */,
+				532C3CC02CA09D7D003688ED /* WikiDeepLinkAppUITestsLaunchTests.swift */,
+			);
+			path = WikiDeepLinkAppUITests;
+			sourceTree = "<group>";
+		};
+		5395321B2C9D71EF0072C2A2 = {
+			isa = PBXGroup;
+			children = (
+				539532262C9D71EF0072C2A2 /* WikiDeepLinkApp */,
+				539532382C9D71F10072C2A2 /* WikiDeepLinkAppTests */,
+				532C3CBE2CA09CD3003688ED /* WikiDeepLinkAppUITests */,
+				539532252C9D71EF0072C2A2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		539532252C9D71EF0072C2A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				539532242C9D71EF0072C2A2 /* WikiDeepLinkApp.app */,
+				539532352C9D71F10072C2A2 /* WikiDeepLinkAppTests.xctest */,
+				5395323F2C9D71F10072C2A2 /* WikiDeepLinkAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		539532262C9D71EF0072C2A2 /* WikiDeepLinkApp */ = {
+			isa = PBXGroup;
+			children = (
+				539532722C9ED8170072C2A2 /* Utility */,
+				5395326B2C9EBFED0072C2A2 /* Storage */,
+				539532682C9DD1700072C2A2 /* Extension */,
+				5395325D2C9DB4970072C2A2 /* View */,
+				539532522C9D72120072C2A2 /* NetworkModule */,
+				539532272C9D71EF0072C2A2 /* WikiDeepLinkAppApp.swift */,
+				5395322B2C9D71F10072C2A2 /* Assets.xcassets */,
+				5395322D2C9D71F10072C2A2 /* WikiDeepLinkApp.entitlements */,
+				5395322E2C9D71F10072C2A2 /* Preview Content */,
+			);
+			path = WikiDeepLinkApp;
+			sourceTree = "<group>";
+		};
+		5395322E2C9D71F10072C2A2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5395322F2C9D71F10072C2A2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		539532382C9D71F10072C2A2 /* WikiDeepLinkAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				539532992CA0975D0072C2A2 /* NetworkModule */,
+				539532962CA094280072C2A2 /* Utility */,
+				539532932CA08A450072C2A2 /* AddLocation */,
+				539532892C9FBACF0072C2A2 /* LocationList */,
+				5395327E2C9FB7E70072C2A2 /* Mocks&Stubs */,
+			);
+			path = WikiDeepLinkAppTests;
+			sourceTree = "<group>";
+		};
+		539532522C9D72120072C2A2 /* NetworkModule */ = {
+			isa = PBXGroup;
+			children = (
+				539532592C9DA30C0072C2A2 /* FetchLocationRequest */,
+				539532532C9D72C40072C2A2 /* NetworkRequest.swift */,
+				539532552C9D73430072C2A2 /* NetworkService.swift */,
+			);
+			path = NetworkModule;
+			sourceTree = "<group>";
+		};
+		539532592C9DA30C0072C2A2 /* FetchLocationRequest */ = {
+			isa = PBXGroup;
+			children = (
+				539532572C9DA23A0072C2A2 /* FetchLocationRequest.swift */,
+				5395325A2C9DA3320072C2A2 /* FetchLocationResponse.swift */,
+			);
+			path = FetchLocationRequest;
+			sourceTree = "<group>";
+		};
+		5395325D2C9DB4970072C2A2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				539532762C9EE3890072C2A2 /* AddLocation */,
+				5395325E2C9DB4A60072C2A2 /* LocationListView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5395325E2C9DB4A60072C2A2 /* LocationListView */ = {
+			isa = PBXGroup;
+			children = (
+				5395325F2C9DB4C80072C2A2 /* LocationListView.swift */,
+				539532612C9DB4E00072C2A2 /* LocationListViewModel.swift */,
+				539532662C9DBF150072C2A2 /* LocationListViewRenderableBuilder.swift */,
+			);
+			path = LocationListView;
+			sourceTree = "<group>";
+		};
+		539532632C9DB9FD0072C2A2 /* DeepLinkBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				539532642C9DBA2C0072C2A2 /* DeepLinkBuilder.swift */,
+			);
+			path = DeepLinkBuilder;
+			sourceTree = "<group>";
+		};
+		539532682C9DD1700072C2A2 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				539532692C9DD17F0072C2A2 /* CLLocation+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		5395326B2C9EBFED0072C2A2 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				539532702C9EC0F20072C2A2 /* LocalDataStorage.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		539532722C9ED8170072C2A2 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				5395328C2C9FCD380072C2A2 /* LocationConverter */,
+				5395327B2C9EFD510072C2A2 /* Constants */,
+				539532732C9ED8230072C2A2 /* URLOpener */,
+				539532632C9DB9FD0072C2A2 /* DeepLinkBuilder */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		539532732C9ED8230072C2A2 /* URLOpener */ = {
+			isa = PBXGroup;
+			children = (
+				539532742C9ED83A0072C2A2 /* URLOpener.swift */,
+			);
+			path = URLOpener;
+			sourceTree = "<group>";
+		};
+		539532762C9EE3890072C2A2 /* AddLocation */ = {
+			isa = PBXGroup;
+			children = (
+				539532772C9EF1260072C2A2 /* AddLocationView.swift */,
+				539532792C9EF14C0072C2A2 /* AddLocationViewModel.swift */,
+			);
+			path = AddLocation;
+			sourceTree = "<group>";
+		};
+		5395327B2C9EFD510072C2A2 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				5395327C2C9EFD7F0072C2A2 /* AppConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		5395327E2C9FB7E70072C2A2 /* Mocks&Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				5395327F2C9FB8190072C2A2 /* MockNetworkService.swift */,
+				539532812C9FB98E0072C2A2 /* MockDeepLinkBuilder.swift */,
+				539532832C9FB9C40072C2A2 /* MockLocationListViewRenderableBuilder.swift */,
+				539532852C9FB9F20072C2A2 /* MockLocalDataStore.swift */,
+				539532872C9FBA390072C2A2 /* MockURLOpener.swift */,
+				5395328F2C9FCE130072C2A2 /* MockLocationConverter.swift */,
+				532C3CC52CA0AA8C003688ED /* MockURLSession.swift */,
+			);
+			path = "Mocks&Stubs";
+			sourceTree = "<group>";
+		};
+		539532892C9FBACF0072C2A2 /* LocationList */ = {
+			isa = PBXGroup;
+			children = (
+				5395328A2C9FBAF20072C2A2 /* LocationListViewModelTests.swift */,
+				539532912C9FCEA00072C2A2 /* LocationListViewRenderableBuilderTests.swift */,
+			);
+			path = LocationList;
+			sourceTree = "<group>";
+		};
+		5395328C2C9FCD380072C2A2 /* LocationConverter */ = {
+			isa = PBXGroup;
+			children = (
+				5395328D2C9FCD590072C2A2 /* LocationConverter.swift */,
+			);
+			path = LocationConverter;
+			sourceTree = "<group>";
+		};
+		539532932CA08A450072C2A2 /* AddLocation */ = {
+			isa = PBXGroup;
+			children = (
+				539532942CA08A560072C2A2 /* AddLocationViewModelTests.swift */,
+			);
+			path = AddLocation;
+			sourceTree = "<group>";
+		};
+		539532962CA094280072C2A2 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				539532972CA094380072C2A2 /* DeepLinkBuildingTests.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		539532992CA0975D0072C2A2 /* NetworkModule */ = {
+			isa = PBXGroup;
+			children = (
+				5395329A2CA0977F0072C2A2 /* NetworkServiceTests.swift */,
+			);
+			path = NetworkModule;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		539532232C9D71EF0072C2A2 /* WikiDeepLinkApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 539532492C9D71F10072C2A2 /* Build configuration list for PBXNativeTarget "WikiDeepLinkApp" */;
+			buildPhases = (
+				539532202C9D71EF0072C2A2 /* Sources */,
+				539532212C9D71EF0072C2A2 /* Frameworks */,
+				539532222C9D71EF0072C2A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WikiDeepLinkApp;
+			productName = WikiDeepLinkApp;
+			productReference = 539532242C9D71EF0072C2A2 /* WikiDeepLinkApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		539532342C9D71F10072C2A2 /* WikiDeepLinkAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5395324C2C9D71F10072C2A2 /* Build configuration list for PBXNativeTarget "WikiDeepLinkAppTests" */;
+			buildPhases = (
+				539532312C9D71F10072C2A2 /* Sources */,
+				539532322C9D71F10072C2A2 /* Frameworks */,
+				539532332C9D71F10072C2A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				539532372C9D71F10072C2A2 /* PBXTargetDependency */,
+			);
+			name = WikiDeepLinkAppTests;
+			productName = WikiDeepLinkAppTests;
+			productReference = 539532352C9D71F10072C2A2 /* WikiDeepLinkAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5395323E2C9D71F10072C2A2 /* WikiDeepLinkAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5395324F2C9D71F10072C2A2 /* Build configuration list for PBXNativeTarget "WikiDeepLinkAppUITests" */;
+			buildPhases = (
+				5395323B2C9D71F10072C2A2 /* Sources */,
+				5395323C2C9D71F10072C2A2 /* Frameworks */,
+				5395323D2C9D71F10072C2A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				539532412C9D71F10072C2A2 /* PBXTargetDependency */,
+			);
+			name = WikiDeepLinkAppUITests;
+			productName = WikiDeepLinkAppUITests;
+			productReference = 5395323F2C9D71F10072C2A2 /* WikiDeepLinkAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5395321C2C9D71EF0072C2A2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					539532232C9D71EF0072C2A2 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					539532342C9D71F10072C2A2 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 539532232C9D71EF0072C2A2;
+					};
+					5395323E2C9D71F10072C2A2 = {
+						CreatedOnToolsVersion = 15.4;
+						LastSwiftMigration = 1540;
+						TestTargetID = 539532232C9D71EF0072C2A2;
+					};
+				};
+			};
+			buildConfigurationList = 5395321F2C9D71EF0072C2A2 /* Build configuration list for PBXProject "WikiDeepLinkApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5395321B2C9D71EF0072C2A2;
+			productRefGroup = 539532252C9D71EF0072C2A2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				539532232C9D71EF0072C2A2 /* WikiDeepLinkApp */,
+				539532342C9D71F10072C2A2 /* WikiDeepLinkAppTests */,
+				5395323E2C9D71F10072C2A2 /* WikiDeepLinkAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		539532222C9D71EF0072C2A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				539532302C9D71F10072C2A2 /* Preview Assets.xcassets in Resources */,
+				5395322C2C9D71F10072C2A2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		539532332C9D71F10072C2A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5395323D2C9D71F10072C2A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		539532202C9D71EF0072C2A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5395325B2C9DA3320072C2A2 /* FetchLocationResponse.swift in Sources */,
+				539532652C9DBA2C0072C2A2 /* DeepLinkBuilder.swift in Sources */,
+				539532542C9D72C40072C2A2 /* NetworkRequest.swift in Sources */,
+				5395328E2C9FCD590072C2A2 /* LocationConverter.swift in Sources */,
+				539532562C9D73430072C2A2 /* NetworkService.swift in Sources */,
+				5395327D2C9EFD7F0072C2A2 /* AppConstants.swift in Sources */,
+				539532782C9EF1260072C2A2 /* AddLocationView.swift in Sources */,
+				5395327A2C9EF14C0072C2A2 /* AddLocationViewModel.swift in Sources */,
+				5395326A2C9DD17F0072C2A2 /* CLLocation+Extension.swift in Sources */,
+				539532602C9DB4C80072C2A2 /* LocationListView.swift in Sources */,
+				539532582C9DA23A0072C2A2 /* FetchLocationRequest.swift in Sources */,
+				539532282C9D71EF0072C2A2 /* WikiDeepLinkAppApp.swift in Sources */,
+				539532622C9DB4E00072C2A2 /* LocationListViewModel.swift in Sources */,
+				539532672C9DBF150072C2A2 /* LocationListViewRenderableBuilder.swift in Sources */,
+				539532752C9ED83A0072C2A2 /* URLOpener.swift in Sources */,
+				539532712C9EC0F20072C2A2 /* LocalDataStorage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		539532312C9D71F10072C2A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				532C3CC62CA0AA8C003688ED /* MockURLSession.swift in Sources */,
+				539532952CA08A560072C2A2 /* AddLocationViewModelTests.swift in Sources */,
+				5395329B2CA0977F0072C2A2 /* NetworkServiceTests.swift in Sources */,
+				539532982CA094380072C2A2 /* DeepLinkBuildingTests.swift in Sources */,
+				5395328B2C9FBAF20072C2A2 /* LocationListViewModelTests.swift in Sources */,
+				539532862C9FB9F20072C2A2 /* MockLocalDataStore.swift in Sources */,
+				539532902C9FCE130072C2A2 /* MockLocationConverter.swift in Sources */,
+				539532802C9FB8190072C2A2 /* MockNetworkService.swift in Sources */,
+				539532822C9FB98E0072C2A2 /* MockDeepLinkBuilder.swift in Sources */,
+				539532922C9FCEA00072C2A2 /* LocationListViewRenderableBuilderTests.swift in Sources */,
+				539532882C9FBA390072C2A2 /* MockURLOpener.swift in Sources */,
+				539532842C9FB9C40072C2A2 /* MockLocationListViewRenderableBuilder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5395323B2C9D71F10072C2A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				532C3CC32CA09D7D003688ED /* WikiDeepLinkAppUITestsLaunchTests.swift in Sources */,
+				532C3CC22CA09D7D003688ED /* WikiDeepLinkAppUITests.swift in Sources */,
+				532C3CC42CA09D7D003688ED /* WikiDeepLinkAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		539532372C9D71F10072C2A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 539532232C9D71EF0072C2A2 /* WikiDeepLinkApp */;
+			targetProxy = 539532362C9D71F10072C2A2 /* PBXContainerItemProxy */;
+		};
+		539532412C9D71F10072C2A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 539532232C9D71EF0072C2A2 /* WikiDeepLinkApp */;
+			targetProxy = 539532402C9D71F10072C2A2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		539532472C9D71F10072C2A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		539532482C9D71F10072C2A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		5395324A2C9D71F10072C2A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WikiDeepLinkApp/WikiDeepLinkApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WikiDeepLinkApp/Preview Content\"";
+				DEVELOPMENT_TEAM = U5F673JJGZ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Places;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = deepak.places.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5395324B2C9D71F10072C2A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WikiDeepLinkApp/WikiDeepLinkApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WikiDeepLinkApp/Preview Content\"";
+				DEVELOPMENT_TEAM = U5F673JJGZ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Places;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = deepak.places.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5395324D2C9D71F10072C2A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U5F673JJGZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Deepak.WikiDeepLinkAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WikiDeepLinkApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WikiDeepLinkApp";
+			};
+			name = Debug;
+		};
+		5395324E2C9D71F10072C2A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U5F673JJGZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Deepak.WikiDeepLinkAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WikiDeepLinkApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WikiDeepLinkApp";
+			};
+			name = Release;
+		};
+		539532502C9D71F10072C2A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U5F673JJGZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Deepak.WikiDeepLinkAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WikiDeepLinkApp;
+			};
+			name = Debug;
+		};
+		539532512C9D71F10072C2A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U5F673JJGZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Deepak.WikiDeepLinkAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WikiDeepLinkApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5395321F2C9D71EF0072C2A2 /* Build configuration list for PBXProject "WikiDeepLinkApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				539532472C9D71F10072C2A2 /* Debug */,
+				539532482C9D71F10072C2A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		539532492C9D71F10072C2A2 /* Build configuration list for PBXNativeTarget "WikiDeepLinkApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5395324A2C9D71F10072C2A2 /* Debug */,
+				5395324B2C9D71F10072C2A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5395324C2C9D71F10072C2A2 /* Build configuration list for PBXNativeTarget "WikiDeepLinkAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5395324D2C9D71F10072C2A2 /* Debug */,
+				5395324E2C9D71F10072C2A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5395324F2C9D71F10072C2A2 /* Build configuration list for PBXNativeTarget "WikiDeepLinkAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				539532502C9D71F10072C2A2 /* Debug */,
+				539532512C9D71F10072C2A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5395321C2C9D71EF0072C2A2 /* Project object */;
+}
