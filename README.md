@@ -2,15 +2,15 @@
 
 ## General Info
 This repository includes two application.
-* Modified Wikipedia application which the support if deep-link action.
+* Modified Wikipedia application.
 * Places iOS app by using which user can add places see those on Wikipedia via a deep-link.
 
 
 ## Instructions
 Please follow below septs to use these apps:
 * Download/Clone the repository.
-* Open wikipedia-ios-modified folder and install the app in the device.
-* Open WikiDeepLinkApp(Places) folder and install the app in the device.
+* Open wikipedia-ios-modified folder and install the app on the device.
+* Open WikiDeepLinkApp(Places) folder and install the app on the same the device.
 * Now you can tap on the location names visible on Places app to open open WIKI map via deep-link. 
 * Enjoy🙂.
 
