@@ -33,10 +33,10 @@ The app consist of two screens.
  2. Add new location screen.
  
 Locations list screen:
-* This screen has two kinds of locations.
- 1. Location send by server.
- 2. Locally saved location by user using Add Location screen.
+* This screen has two kinds of locations. Location send by server and Locally saved location by user using Add Location screen.
 * There is a add button on the top right corner to open Add Location screen. 
+
+
 
 Add new location screen:
 * This screen has a input filed to take the user typed location.
