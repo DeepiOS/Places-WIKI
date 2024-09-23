@@ -14,7 +14,7 @@ Please follow below septs to use these apps:
 * Now you can tap on the location names visible on Places app to open open WIKI map via deep-link. 
 * Enjoy🙂.
 
-## App Architecture && Technologies
+## App Architecture & Technologies
 
 Places App:
 * The Architecture followed in the app is MVVM.
