@@ -25,6 +25,7 @@ Places App:
 
 Wikipedia App:
 * There no architectural change in this app.
+* One can easyly find the minimal modifiaction that has been done in PlacesViewController.swift file, Marked using: // MARK: - Trigger search manually
 
 ## App Modules
 **Places App:**
