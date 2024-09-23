@@ -16,26 +16,28 @@ Please follow below septs to use these apps:
 
 ## App Architecture && Technologies
 
-###Places App:
+Places App:
 * The Architecture followed in the app is MVVM.
 * There are builder pattern used to process and create ViewModel.
 * The whole app is built using SwiftUI + Combine using protocol oriented programming.
 * Plist is being used to save user data.
 * XCTest framework is used to extensively cover all the parts of the codebase with unit-tests.
 
-###Wikipedia App:
+Wikipedia App:
 * There no architectural change in this app.
 
 ## App Modules
-###Places App:
+Places App:
 The app consist of two screens.
-    * Locations list screen
-    * Add new location screen.
+ 1. Locations list screen
+ 2. Add new location screen.
+ 
 Locations list screen:
 * This screen has two kinds of locations.
- - Location send by server.
- - Locally saved location by user using Add Location screen.
+ 1. Location send by server.
+ 2. Locally saved location by user using Add Location screen.
 * There is a add button on the top right corner to open Add Location screen. 
+
 Add new location screen:
 * This screen has a input filed to take the user typed location.
 * A save button to store it locally.
