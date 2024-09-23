@@ -51,8 +51,6 @@ struct LocationListView: View {
         .navigationTitle(AppConstants.locationListTitle)
     }
 
-    //"This screen has list of places which you can click and see the location on the Wikipedia app's map"
-
     @ViewBuilder
     func locationListView(_ places: [String]) -> some View {
         ScrollView {
