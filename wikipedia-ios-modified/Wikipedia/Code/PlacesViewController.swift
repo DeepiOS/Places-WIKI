@@ -1969,13 +1969,6 @@ class PlacesViewController: ViewController, UISearchBarDelegate, ArticlePopoverV
         currentSearch = PlaceSearch(filter: .top, type: .location, origin: .user, sortStyle: .links, string: nil, region: region, localizedDescription: title, searchResult: searchResult, siteURL: articleURL.wmf_site)
     }
 
-    @objc public func searchPlace(_ name: String) {
-        guard viewIfLoaded != nil, !name.isEmpty else {
-            return
-        }
-        handleSearchOnReceivedDeepLink(locationName: name)
-    }
-
     fileprivate func searchForFirstSearchSuggestion() {
         if !searchSuggestionController.searches[PlaceSearchSuggestionController.completionSection].isEmpty {
             currentSearch = searchSuggestionController.searches[PlaceSearchSuggestionController.completionSection][0]
@@ -2455,6 +2448,13 @@ extension PlacesViewController {
 // MARK: - Trigger search manually
 
 extension PlacesViewController {
+    @objc public func searchPlace(_ name: String) {
+        guard viewIfLoaded != nil, !name.isEmpty else {
+            return
+        }
+        handleSearchOnReceivedDeepLink(locationName: name)
+    }
+    
     fileprivate func handleSearchOnReceivedDeepLink(locationName: String?) {
         guard let name = locationName else { return }
         triggerSearch(name)
